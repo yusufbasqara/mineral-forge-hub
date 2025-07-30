@@ -1,0 +1,75 @@
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { Fuel, Pickaxe, Building } from "lucide-react";
+
+const ServicesSection = () => {
+  const services = [
+    {
+      icon: <Fuel className="w-12 h-12 text-accent" />,
+      title: "Energy Solutions",
+      description: "The Fuel Behind Progress",
+      story: "Every engine that powers Indonesia's growth needs fuel. From solid coal to liquid petroleum and clean gas, we ensure your operations never skip a beat. When the construction site awakens at dawn, when the factory fires roar to life, when transportation fleets begin their daily routes—we're the energy behind it all."
+    },
+    {
+      icon: <Pickaxe className="w-12 h-12 text-accent" />,
+      title: "Metal & Ore Trading",
+      description: "The Strength of Nations",
+      story: "Indonesia's rich earth holds treasures that build skylines and connect continents. Our metal and ore trading expertise transforms raw potential into refined possibilities. From the deepest mines to the busiest ports, we handle the materials that become bridges, buildings, and the backbone of modern civilization."
+    },
+    {
+      icon: <Building className="w-12 h-12 text-accent" />,
+      title: "Construction Materials",
+      description: "Building Dreams into Reality",
+      story: "Every foundation needs the right foundation. Our comprehensive supply of cement, lime, sand, and stone doesn't just deliver materials—we deliver the possibility of transformation. Shopping centers, housing complexes, industrial facilities—we provide the building blocks that turn architectural dreams into tangible realities."
+    }
+  ];
+
+  return (
+    <section className="py-20 bg-background">
+      <div className="container mx-auto px-6">
+        <div className="text-center mb-16">
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-primary">
+            Our Services
+          </h2>
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+            Three pillars of industrial excellence, each with its own story of transformation
+          </p>
+        </div>
+        
+        <div className="grid md:grid-cols-3 gap-8 mb-12">
+          {services.map((service, index) => (
+            <Card key={index} className="shadow-card hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border-0 bg-gradient-to-b from-card to-muted/20">
+              <CardHeader className="text-center pb-4">
+                <div className="flex justify-center mb-4">
+                  {service.icon}
+                </div>
+                <CardTitle className="text-2xl text-primary mb-2">
+                  {service.title}
+                </CardTitle>
+                <p className="text-accent font-semibold">
+                  {service.description}
+                </p>
+              </CardHeader>
+              <CardContent>
+                <p className="text-muted-foreground leading-relaxed">
+                  {service.story}
+                </p>
+              </CardContent>
+            </Card>
+          ))}
+        </div>
+        
+        <div className="text-center">
+          <p className="text-lg text-muted-foreground mb-6">
+            Plus specialized transportation services and non-metallic minerals to complete your supply chain
+          </p>
+          <Button variant="industrial" size="lg">
+            Discover All Services
+          </Button>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default ServicesSection;

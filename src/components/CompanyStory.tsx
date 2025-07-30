@@ -1,0 +1,38 @@
+const CompanyStory = () => {
+  return (
+    <section className="py-20 bg-gradient-to-b from-background to-muted">
+      <div className="container mx-auto px-6">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 text-primary">
+            Why We Exist
+          </h2>
+          
+          <div className="space-y-8 text-lg leading-relaxed">
+            <p className="text-muted-foreground">
+              Every great structure starts with a foundation. Every successful project begins with reliable partners. 
+              In November 2022, we saw an opportunity to become that foundation—the trusted partner that Indonesia's 
+              growing industries could depend on for their most essential needs.
+            </p>
+            
+            <p className="text-muted-foreground">
+              From our home in Kendari, Sulawesi Tenggara, we've witnessed firsthand the rapid transformation 
+              of Indonesia's industrial landscape. We've seen projects stall because the right materials weren't 
+              available at the right time. We've seen businesses struggle to find reliable suppliers who understand 
+              both quality and deadlines.
+            </p>
+            
+            <p className="text-muted-foreground">
+              That's why PT Multi Mineral Indotama exists—not just as another trading company, but as your 
+              strategic partner in building something bigger. We harmonize the complex dance between supply and 
+              demand, ensuring that when you're ready to build, create, or expand, we're already there with 
+              exactly what you need. Because Indonesia's future isn't just built with materials—it's built 
+              with partnerships that last.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default CompanyStory;
