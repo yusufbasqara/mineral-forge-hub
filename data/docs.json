@@ -1,0 +1,38 @@
+[
+  { 
+    "file": "Surat-Kemenkumham-PTMMI.pdf", 
+    "title": "SK Pengesahan Kemenkumham", 
+    "date": "2025-07-22",
+    "category": "Legal"
+  },
+  { 
+    "file": "Company-Profile-PTMMI.pdf", 
+    "title": "Company Profile PT MMI", 
+    "date": "2024-11-15",
+    "category": "Corporate"
+  },
+  { 
+    "file": "Business-License-PTMMI.pdf", 
+    "title": "Izin Usaha Perdagangan", 
+    "date": "2022-11-04",
+    "category": "License"
+  },
+  { 
+    "file": "Financial-Report-2023.pdf", 
+    "title": "Laporan Keuangan 2023", 
+    "date": "2024-03-31",
+    "category": "Financial"
+  },
+  { 
+    "file": "Environmental-Compliance-2024.pdf", 
+    "title": "Sertifikat Kelayakan Lingkungan", 
+    "date": "2024-06-15",
+    "category": "Environmental"
+  },
+  { 
+    "file": "ISO-Certificate-PTMMI.pdf", 
+    "title": "ISO 9001:2015 Certificate", 
+    "date": "2024-01-10",
+    "category": "Certification"
+  }
+]
