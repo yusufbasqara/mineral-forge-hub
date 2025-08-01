@@ -14,8 +14,7 @@ const App = () => (
     <TooltipProvider>
       <Toaster />
       <Sonner />
-      <BrowserRouter>
-      <BrowserRouter basename="/mineral-forge-hub"></BrowserRouter>
+      <BrowserRouter basename="/mineral-forge-hub">
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/documents" element={<Documents />} />
